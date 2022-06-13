@@ -9,8 +9,7 @@
     max-width: 1024px;
     margin: auto;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 5fr 2fr 5fr;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -107,4 +106,28 @@ h2 {
     width: 100%;
     background: greenyellow;
     height: 100%;
+}
+
+@media (max-width: 600px) {
+    #game {
+        flex-direction: column;
+    }
+
+    .fight {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card > img {
+        width: 150px;
+    }
+
+    .weapons > img {
+        width: 30px;
+    }
+
+    .card {
+        margin: 0;
+    }
 }
